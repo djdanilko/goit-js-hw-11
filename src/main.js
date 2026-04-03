@@ -3,7 +3,9 @@ import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
 
-console.log('MAIN JS LOADED');
+export default {
+  base: '/goit-js-hw-11/',
+};
 
 import { getImagesByQuery } from './js/pixabay-api.js';
 import {
