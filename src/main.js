@@ -3,6 +3,8 @@ import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
 
+console.log('MAIN JS LOADED');
+
 import { getImagesByQuery } from './js/pixabay-api.js';
 import {
   createGallery,
