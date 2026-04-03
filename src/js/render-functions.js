@@ -15,7 +15,7 @@ export function createGallery(images) {
   const markup = images
     .map(
       ({
-        previewURL,
+        webformatURL,
         tags,
         largeImageURL,
         likes,
@@ -27,7 +27,7 @@ export function createGallery(images) {
         <a class="gallery-link" href="${largeImageURL}">
           <img
             class="gallery-image"
-            src="${previewURL}"
+            src="${webformatURL}"
             alt="${tags}"
           />
         </a>

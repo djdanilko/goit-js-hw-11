@@ -44,7 +44,12 @@ async function onSearch(event) {
 
     createGallery(data.hits);
   } catch (error) {
-    console.log(error);
+    iziToast.show({
+      message: 'error',
+      messageColor: 'white',
+      backgroundColor: 'red',
+      position: 'topRight',
+    });
   } finally {
     hideLoader();
   }
